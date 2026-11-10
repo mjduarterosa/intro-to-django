@@ -15,8 +15,6 @@ __pycache__
 .idea/
 .vscode/
 
-dj_test/
-
 # Trivia site
 .env
 staticfiles/

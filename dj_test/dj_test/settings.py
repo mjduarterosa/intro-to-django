@@ -25,8 +25,13 @@ SECRET_KEY = 'django-insecure-d5i$=tdb28nsdj_4h6+(qra&$b=09-v_0kaa(#)=8-1!f%#jd_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+CSRF_TRUSTED_ORIGINS = [
+    "https://vigilant-xylophone-wx69wpjgvvh55vg-8000.app.github.dev",
+]
 
+USE_X_FORWARDED_HOST = True
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
